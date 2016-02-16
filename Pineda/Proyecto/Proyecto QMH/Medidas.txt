@@ -1,0 +1,24 @@
+
+Cuerpo Humano c/u:
+11 cm alto
+4 cm ancho
+
+Botones de Musculos:
+3.5 cm ancho
+1.2 cm alto
+
+Botones de Menus Inferiores (Reset, Impulso, Help, Back):
+2.5 cm ancho
+1.5 cm alto
+
+Boton Start/Inicio:
+4 cm ancho
+1.5 cm alto
+
+Boton Barra vertical:
+1.5 cm ancho
+13 cm alto
+
+Botones + y -:
+1 cm ancho
+2 cm alton
