@@ -1,6 +1,7 @@
 #include "dialog.h"
 #include <QApplication>
 #include <QSplashScreen>
+#include <QThread>
 
 int main(int argc, char *argv[])
 {
@@ -22,7 +23,8 @@ int main(int argc, char *argv[])
     a.processEvents();                                          // It is necessary to call this periodically to receive mouse clicks
 
     // Unnecesary delay (to display the splash screen longer)
-    for(int i= 0; i < 1000000000; i++);
+    //for(int i= 0; i < 1000000000; i++);
+    QThread::usleep(1000000);
 
     // Do some other stuff and display a different message
     splash->showMessage(QObject::tr("Established connections"));
@@ -30,7 +32,8 @@ int main(int argc, char *argv[])
 
 
     // Unnecesary delay (to display the splash screen longer)
-    for(int i= 0; i < 1000000000; i++);
+    //for(int i= 0; i < 1000000000; i++);
+    QThread::usleep(1000000);
 
     w.show();
     splash->finish(&w);
