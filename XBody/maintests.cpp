@@ -35,6 +35,6 @@ int main(int argc, char *argv[])
     w.show();
     splash->finish(&w);
 
-    delete splash;
+    //delete splash;
     return a.exec();
 }

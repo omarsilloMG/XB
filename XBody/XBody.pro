@@ -13,7 +13,8 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        dialog.cpp
+        dialog.cpp \
+    maintests.cpp
 
 HEADERS  += dialog.h
 
