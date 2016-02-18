@@ -14,11 +14,14 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         dialog.cpp \
-    maintests.cpp
+    maintests.cpp \
+    splash.cpp
 
-HEADERS  += dialog.h
+HEADERS  += dialog.h \
+    splash.h
 
-FORMS    += dialog.ui
+FORMS    += dialog.ui \
+    splash.ui
 
 RESOURCES += \
     resources.qrc
