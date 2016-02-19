@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 
     // Unnecesary delay (to display the splash screen longer)
     //for(int i= 0; i < 1000000000; i++);
-    QThread::usleep(1000000);
+    QThread::msleep(1000);
 
     // Do some other stuff and display a different message
     splash->showMessage(QObject::tr("Established connections"));
@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 
     // Unnecesary delay (to display the splash screen longer)
     //for(int i= 0; i < 1000000000; i++);
-    QThread::usleep(1000000);
+    QThread::msleep(1000);
 
     w.show();
     splash->finish(&w);
