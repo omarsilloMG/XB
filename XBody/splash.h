@@ -1,22 +1,40 @@
 #ifndef SPLASH_H
 #define SPLASH_H
 
-#include <QDialog>
+// Possibly remove the include headers with forward declarations
+// of the classes.
 
-namespace Ui {
+#include <QDialog>
+#include <QProgressBar>
+#include <QSplashScreen>
+#include <QGroupBox>
+#include <QRadioButton>
+#include <QCheckBox>
+
+/*namespace Ui {
 class Splash;
-}
+}*/
 
 class Splash : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit Splash(QWidget *parent = 0);
-    ~Splash();
+    Splash(QWidget *parent = 0);
+    //explicit Splash(QWidget *parent = 0);
+    //~Splash();
+
+private slots:
+    void advanceProgressBar();
 
 private:
-    Ui::Splash *ui;
+    //Ui::Splash *ui;
+    void createProgressBar();
+    void createTopLeftGroupBox();
+    void createSplashScreen();
+    QProgressBar* progressBar;
+    QSplashScreen* splash;
+
 };
 
 #endif // SPLASH_H

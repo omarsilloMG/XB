@@ -1,4 +1,4 @@
-#include "dialog.h"
+/*#include "dialog.h"
 #include <QApplication>
 #include <QSplashScreen>
 #include <QThread>
@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     Dialog w;
 
-    /*  SPLASH SCREEN CODE with messages */
+    // SPLASH SCREEN CODE with messages
     Q_INIT_RESOURCE(resources);                                 // Ensure that the resources are initialized at startup (.JPG)
     QPixmap pixmap(":/Images/XBody.JPG");                       // Load Image Resource
     QSplashScreen* splash = new QSplashScreen(pixmap);          // Create splash screen with the image
@@ -41,3 +41,4 @@ int main(int argc, char *argv[])
     delete splash;
     return a.exec();
 }
+*/
